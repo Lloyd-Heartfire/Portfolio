@@ -5,14 +5,24 @@ const ProjectCard = ({project, isDesign}) => {
     return (
         <div className="border-2 border-cyan-500 bg-gray-900/50 backdrop-blur-sm overflow-hidden hover:bg-cyan-500/10 transition-all hover:shadow-lg hover:shadow-cyan-500/50 group">
             {/* Image */}
-            <div className="w-full h-48 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center border-b-2 border-cyan-500 relative overflow-hidden">
-                <div className="absolute inset-0 bg-cyan-500/5 group-hover:bg-cyan-500/10 transition-all"></div>
-                {isDesign ? (
-                    <Palette className="w-16 h-16 text-cyan-500/30 group-hover:text-cyan-500/50 transition-all" />
+            <div className="w-full h-48 from-gray-800 border-b-2 border-cyan-500 relative overflow-hidden">
+                {project.image ? (
+                    <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                 ) : (
-                    <Code className="w-16 h-16 text-cyan-500/30 group-hover:text-cyan-500/50 transition-all" />
+                    <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
+                        <div className="absolute inset-0 bg-cyan-500/5  group-hover:bg-cyan-500/10 transition-all"></div>
+                        {isDesign ? (
+                            <Palette className="w-16 h-16 text-cyan-500/30 group-hover:text-cyan-500/50 transition-all" />
+                        ) : (
+                            <Code className="w-16 h-16 text-cyan-500/30 group-hover:text-cyan-500/50 transition-all" />
+                        )}
+                        <div className="absolute bottom-2 right-2 text-xs font-mono text-cyan-500/50">IMAGE</div>
+                    </div>
                 )}
-                <div className="absolute bottom-2 right-2 text-xs font-mono text-cyan-500/50">IMAGE</div>
             </div>
 
             <div className="p-6">
