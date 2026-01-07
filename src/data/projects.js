@@ -1,4 +1,4 @@
-export const webProjects = [
+export const devProjects = [
     {
         title: "MSP - Projet Professionnel IA",
         tech: "Python, Pandas",

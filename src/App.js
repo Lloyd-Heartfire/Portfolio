@@ -2,10 +2,10 @@ import React from 'react';
 import Background from './components/Background/Background';
 import Home from './components/Home/Home';
 import Timeline from './components/Timeline/Timeline';
-// import Projects from './components/Projects/Projects';
+import Projects from './components/Projects/Projects';
 // import Skills from './components/Skills/Skills';
 // import Contact from './components/Contact/Contact';
-// import Footer from './components/Footer/Footer';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -13,10 +13,10 @@ function App() {
       <Background />
       <Home />
       <Timeline />
-      {/* <Projects /> */}
+      <Projects />
       {/* <Skills /> */}
       {/* <Contact /> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
