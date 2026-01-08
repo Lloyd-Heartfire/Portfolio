@@ -3,7 +3,7 @@ import {Mail, Github, Linkedin, MapPin, Phone, CheckCircle, AlertCircle} from "l
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-    const [formData, setFomData] = useState({
+    const [formData, setFormData] = useState({
         from_name: "",
         from_email: "",
         message: "",
