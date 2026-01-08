@@ -46,16 +46,17 @@ const Contact = () => {
                 message: "Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais."
             });
 
+            // Réinitialisation du formulaire
             setFormData({
                 from_name: "",
                 from_email: "",
                 message: "",
             });
         } catch (error) {
-            console.error("Erreur lors de l'envoi:", error);
+            console.error("Erreur lors de l\'envoi:", error);
             setStatus({
                 type:"error",
-                message: "Erreur lors de l'envoi du message. Veuillez réessayer dans quelques instants. Si le problème persiste, contactez moi directement par mail."
+                message: "Erreur lors de l\'envoi du message. Veuillez réessayer dans quelques instants. Si le problème persiste, contactez moi directement par mail."
             });
         } finally {
             setIsLoading(false);
@@ -74,7 +75,7 @@ const Contact = () => {
                 </p>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
-                    {/* Status message */}
+                    {/* Stats message */}
                     {status.message && (
                         <div className={`p-4 border-2 flex items-center gap-3 ${
                             status.type === "success"
