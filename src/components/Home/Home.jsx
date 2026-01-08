@@ -47,10 +47,6 @@ const Home = () => {
                         <Mail className="w-4 h-4" /> 
                         <span>beaudonloic@hotmail.com</span>
                     </div>
-                    <div className="flex items-center gap-2 border border-cyan-500/30 px-3 py-2 bg-gray-900/50">
-                        <MapPin className="w-4 h-4" /> 
-                        <span>En cours de construction</span>
-                    </div>
                 </div>
 
                 <div className="flex justify-center gap-6">
