@@ -23,6 +23,9 @@ const Skills = () => {
                     <h3 className="text-2xl font-mono text-cyan-300 mb-6 text-center">LANGUES</h3>
                     <div className="flex justify-center gap-6 flex-wrap">
                         <div className="px-6 py-3 border-2 border-cyan-500 bg-cyan-500/10">
+                            <span className="font-mono text-cyan-300">Français - <span className="text-cyan-500 font-bold">Natif</span></span>
+                        </div>
+                        <div className="px-6 py-3 border-2 border-cyan-500 bg-cyan-500/10">
                             <span className="font-mono text-cyan-300">Anglais - <span className="text-cyan-500 font-bold">B2</span></span>
                         </div>
                     </div>
