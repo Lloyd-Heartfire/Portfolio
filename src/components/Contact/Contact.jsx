@@ -46,17 +46,16 @@ const Contact = () => {
                 message: "Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais."
             });
 
-            // Réinitialisation du formulaire
             setFormData({
                 from_name: "",
                 from_email: "",
                 message: "",
             });
         } catch (error) {
-            console.error("Erreur lors de l\'envoi:", error);
+            console.error("Erreur lors de l'envoi:", error);
             setStatus({
                 type:"error",
-                message: "Erreur lors de l\'envoi du message. Veuillez réessayer dans quelques instants. Si le problème persiste, contactez moi directement par mail."
+                message: "Erreur lors de l'envoi du message. Veuillez réessayer dans quelques instants. Si le problème persiste, contactez moi directement par mail."
             });
         } finally {
             setIsLoading(false);
@@ -75,8 +74,7 @@ const Contact = () => {
                 </p>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
-
-                    {/* Stats message */}
+                    {/* Status message */}
                     {status.message && (
                         <div className={`p-4 border-2 flex items-center gap-3 ${
                             status.type === "success"
@@ -91,9 +89,6 @@ const Contact = () => {
                             <p className="font-mono text-sm">{status.message}</p>
                         </div>
                     )}
-                </form>
-
-                <div className="space-y-6">
 
                     {/* Name and Email row */}
                     <div className="grid md:grid-cols-2 gap-6">
@@ -103,7 +98,7 @@ const Contact = () => {
                             value={formData.from_name}
                             onChange={handleChange}
                             placeholder="Votre nom *"
-                            className="w-full px-6 py-4 bg-gray-900/50 text-cyan-400 placeholder-cyan-600 border-2 border-cyan 500 focus:border-cyan-300 focus:outline-none focus:shadow-lg focus:shadow-cyan-500/30 transition-all font-mono backdrop-blur-sm"
+                            className="w-full px-6 py-4 bg-gray-900/50 text-cyan-400 placeholder-cyan-600 border-2 border-cyan-500 focus:border-cyan-300 focus:outline-none focus:shadow-lg focus:shadow-cyan-500/30 transition-all font-mono backdrop-blur-sm"
                             required 
                         />
                         <input
@@ -112,7 +107,7 @@ const Contact = () => {
                             value={formData.from_email}
                             onChange={handleChange}
                             placeholder="Email *"
-                            className="w-full px-6 py-4 bg-gray-900/50 text-cyan-400 placeholder-cyan-600 border-2 border-cyan 500 focus:border-cyan-300 focus:outline-none focus:shadow-lg focus:shadow-cyan-500/30 transition-all font-mono backdrop-blur-sm"
+                            className="w-full px-6 py-4 bg-gray-900/50 text-cyan-400 placeholder-cyan-600 border-2 border-cyan-500 focus:border-cyan-300 focus:outline-none focus:shadow-lg focus:shadow-cyan-500/30 transition-all font-mono backdrop-blur-sm"
                             required 
                         />
                     </div>
@@ -143,7 +138,7 @@ const Contact = () => {
                             {!isLoading && <span className="text-xl">▶</span>}
                         </button>
                     </div>
-                </div>
+                </form>
 
                 {/* Contact info and links */}
                 <div className="mt-12 pt-8 border-t-2 border-cyan-500/30">
@@ -154,14 +149,12 @@ const Contact = () => {
                                 <a href="tel:+33626660607">06.26.66.06.07</a>
                             </div>
                             <div className="flex items-center gap-2 border border-cyan-500/30 px-3 py-2 bg-gray-900/30">
-                                <Mail className="w-4 h-4">
-                                    <a href="mailto:beaudonloic@hotmail.com">beaudonloic@hotmail.com</a>
-                                </Mail>
+                                <Mail className="w-4 h-4" />
+                                <a href="mailto:beaudonloic@hotmail.com">beaudonloic@hotmail.com</a>
                             </div>
                             <div className="flex items-center gap-2 border border-cyan-500/30 px-3 py-2 bg-gray-900/30">
-                                <MapPin className="w-4 h-4">
-                                    <span>Blagny, FRANCE</span>
-                                </MapPin>
+                                <MapPin className="w-4 h-4" />
+                                <span>Blagny, FRANCE</span>
                             </div>
                         </div>
 
