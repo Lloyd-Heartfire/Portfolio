@@ -48,7 +48,7 @@ const Home = () => {
                         <span>beaudonloic@hotmail.com</span>
                     </div>
                     <div className="flex items-center gap-2 border border-cyan-500/30 px-3 py-2 bg-gray-900/50">
-                        <div className="w-4 h-4" /> 
+                        <MapPin className="w-4 h-4" /> 
                         <span>En cours de construction</span>
                     </div>
                 </div>
