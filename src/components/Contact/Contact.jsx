@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Mail, Github, Linkedin, MapPin, Phone, CheckCircle, AlertCircle} from "lucide-react";
+import {Mail, Github, MapPin, Phone, CheckCircle, AlertCircle} from "lucide-react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -93,7 +93,7 @@ const Contact = () => {
                     )}
                 </form>
 
-                <form className="space-y-6">
+                <div className="space-y-6">
 
                     {/* Name and Email row */}
                     <div className="grid md:grid-cols-2 gap-6">
@@ -143,13 +143,13 @@ const Contact = () => {
                             {!isLoading && <span className="text-xl">▶</span>}
                         </button>
                     </div>
-                </form>
+                </div>
 
                 {/* Contact info and links */}
                 <div className="mt-12 pt-8 border-t-2 border-cyan-500/30">
                     <div className="flex flex-wrap justify-between items-center gap-6">
                         <div className="flex flex-wrap gap-6 text-sm font-mono text-cyan-400">
-                            <div className="flex items-center gap-2 border border-cyan-500/30 px-33 py-2 bg-gray-900/30">
+                            <div className="flex items-center gap-2 border border-cyan-500/30 px-3 py-2 bg-gray-900/30">
                                 <Phone className="w-4 h-4" />
                                 <a href="tel:+33626660607">06.26.66.06.07</a>
                             </div>
