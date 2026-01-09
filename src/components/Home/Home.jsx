@@ -2,6 +2,13 @@ import React from "react";
 import {Code, Palette, Mail, Github, MapPin, Phone} from "lucide-react";
 
 const Home = () => {
+    const scrollToContact = () => {
+        const contactSection = document.getElementById("contact");
+        if (contactSection) {
+            contactSection.scrollIntoView({behavior:"smooth"});
+        }
+    };
+
     return (
         <section className="relative min-h-screen flex items-center justify-center px-4 py-20">
             <div className="text-center z-10 max-w-4xl">
@@ -39,15 +46,26 @@ const Home = () => {
                         <MapPin className="w-4 h-4" />
                         <span>Blagny, FRANCE</span>
                     </div>
-                    <div className="flex items-center gap-2 border border-cyan-500/30 px-3 py-2 bg-gray-900/50">
+                    <a
+                        href="tel:+33626660607" 
+                        className="flex items-center gap-2 border border-cyan-500/30 px-3 py-2 bg-gray-900/50">
                         <Phone className="w-4 h-4" />
                         <span>06.26.66.06.07</span>
-                    </div>
-                    <div className="flex items-center gap-2 border border-cyan-500/30 px-3 py-2 bg-gray-900/50">
+                    </a>
+                    <a
+                        href="mailto:beaudonloic@hotmail.com" 
+                        className="flex items-center gap-2 border border-cyan-500/30 px-3 py-2 bg-gray-900/50">
                         <Mail className="w-4 h-4" /> 
                         <span>beaudonloic@hotmail.com</span>
-                    </div>
+                    </a>
                 </div>
+
+                <button
+                    onClick={scrollToContact}
+                    className="mb-8 px-8 py-4 bg-cyan-500 text-gray-900 font-bold font-mono text-lg hover:bg-cyan-400 transition-all shadow-lg shadow-cyan-500/50 hover:shadow-cyan-400/70 hover:scale-105 border-2 border-cyan-500"
+                >
+                    ME CONTACTER ▼
+                </button>
 
                 <div className="flex justify-center gap-6">
                     <a href="https://github.com/Lloyd-Heartfire" target="_blank" rel="noopener noreferrer" className="p-3 border border-cyan-500 hover:bg-cyan-500/20 transition-all hover:shadow-lg hover:shadow-cyan-500/50">
