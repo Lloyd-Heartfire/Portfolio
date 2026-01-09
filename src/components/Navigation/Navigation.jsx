@@ -16,7 +16,7 @@ const Navigation = () => {
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
         if (element) {
-            element.scrollIntoView({behavio: "smooth"});
+            element.scrollIntoView({behavior: "smooth"});
             setIsOpen(false);
         }
     };
@@ -27,7 +27,7 @@ const Navigation = () => {
             const sections = navItems.map(item => document.getElementById(item.id));
             const scrollPosition = window.scrollY + 100;
 
-            for (let i = sections.lenght - 1; i >= 0; i--) {
+            for (let i = sections.length - 1; i >= 0; i--) {
                 const section = sections[i];
                 if (section && section.offsetTop <= scrollPosition) {
                     setActiveSection(navItems[i].id);
@@ -59,11 +59,11 @@ const Navigation = () => {
                             <button
                                 key={item.id}
                                 onClick={() => scrollToSection(item.id)}
-                                className="{`px-4 py-2 font-mono text-sm transition-all ${
+                                className={`px-4 py-2 font-mono text-sm transition-all ${
                                 activeSection === item.id
                                 ? 'bg-cyan-500 text-gray-900 font-bold'
                                 : 'text-cyan-400 hover:bg-cyan-500/20 hover:text-cyan-300'
-                                }`}"
+                                }`}
                             >
                                 {item.label}
                             </button>
