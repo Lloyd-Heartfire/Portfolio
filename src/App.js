@@ -13,11 +13,21 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-cyan-400 overflow-hidden">
       <Background />
       <Navigation />
-      <Home />
-      <Timeline />
-      <Projects />
-      <Skills />
-      <Contact />
+      <div id="home">
+        <Home />
+      </div>
+      <div id="timeline">
+        <Timeline />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="skills">
+        <Skills />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
       <Footer />
     </div>
   );
