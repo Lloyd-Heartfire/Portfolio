@@ -10,7 +10,7 @@ const Home = () => {
     };
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center px-4 py-20">
+        <section className="relative min-h-screen flex items-center justify-center px-4 py-20 pt-24">
             <div className="text-center z-10 max-w-4xl">
                 <div className="mb-8 relative inline-block">
                     <div className="absolute -inset-4 bg-cyan-500 blur-2xl opacity-20 animate-pulse"></div>
