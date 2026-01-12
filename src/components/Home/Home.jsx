@@ -33,7 +33,7 @@ const Home = () => {
                     <Palette className="w-6 h-6 animate-pulse" />
                 </div>
 
-                <p className="text-lg font-mono text-cyan-400 mb-6">Spécialité Machine Learning</p>
+                <p className="text-lg font-mono text-cyan-400 mb-6">Spécialité Frontend & Machine Learning</p>
 
                 <div className="inline-block px-6 py-3 border-2 border-cyan-500 bg-cyan-500/10 backdrop-blur-sm animate-pulse mb-6">
                     <p className="text-lg font-mono text-cyan-300">
