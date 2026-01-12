@@ -51,7 +51,7 @@ const ProjectCard = ({project, isDesign}) => {
                 </div>
 
                 {/* Collapsible content */}
-                <div className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
+                <div className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"}`}>
                     <div className="pt-4 border-t border-cyan-500/30">
                         {project.description && (
                             <p className="text-cyan-400/80 text-sm mb-4">{project.description}</p>
