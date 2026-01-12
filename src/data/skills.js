@@ -11,5 +11,5 @@ export const designSkills = [
 ];
 
 export const toolsSkills = [
-    "Git", "Docker", "VSCode", "Kubernetes", "Trello", "Wordpress", "Shopify", "Postman"
+    "Git", "Docker", "VSCode", "Trello", "Wordpress", "Shopify", "Postman"
 ];
