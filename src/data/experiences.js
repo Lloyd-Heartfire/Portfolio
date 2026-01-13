@@ -35,7 +35,7 @@ export const formations = [
         type: "formation"
     },
     {
-        title: "Concepteur Deisgner UI/UX",
+        title: "Concepteur Designer UI/UX",
         school: "Pôle Formation UIMM",
         period: "Janvier - Octobre 2024",
         location: "Charleville-Mézières",
